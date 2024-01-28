@@ -1,9 +1,13 @@
 package first_task;
 
-public class Dog extends Pet{
+public class Dog implements Pet{
+
+  public String type = "Я пес ";
+
+  public String getType() {
+    return type;
+  }
 
   @Override
-  public void voice(){
-    System.out.println("Я пес - Гаууу-Гаууу");
-  }
+  public void voice(){}
 }

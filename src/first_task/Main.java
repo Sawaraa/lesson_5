@@ -5,12 +5,18 @@ public class Main {
   public static void main(String[] args) {
 
     Cat cat = new Cat();
-    cat.voice();
+    print (() -> System.out.println(cat.getType() + "Мяу"));
 
     Dog dog = new Dog();
-    dog.voice();
+    print(() -> System.out.println(dog.getType() + "Гаууу-Гаууу"));
 
     Cow cow = new Cow();
-    cow.voice();
+    print(() -> System.out.println(cow.getType() + "Мууу-Мууу"));
   }
+
+  public static void print(Pet animal){
+    animal.voice();
+  }
+
+
 }

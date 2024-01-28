@@ -1,7 +1,7 @@
 package first_task;
+@FunctionalInterface
+public interface Pet {
 
-public abstract class Pet {
-
-  public abstract void voice();
+  void voice();
 
 }
